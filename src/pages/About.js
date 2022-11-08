@@ -1,5 +1,11 @@
 export default function About() {
-    return(
-        <h1>ABOUT PAGE</h1>
-    )
+  return (
+    <section className="section">
+      <h1 className="section-title">ABOUT</h1>
+      <p className="section-description">
+        Halo namaku Brucel, aku adalah seorang Web Developer yang baru mulai
+        belajar React.js
+      </p>
+    </section>
+  );
 }

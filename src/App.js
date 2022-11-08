@@ -4,13 +4,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
     <div className="App">
       <nav>
         <Link to="/">HOME</Link>
-        <Link to="/profile">PROFILE</Link>
+        <Link to="/about">ABOUT</Link>
         <Link to="/portfolio">PORTFOLIO</Link>
         <Link to="/blog">BLOG</Link>
       </nav>
@@ -20,6 +21,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="blog/:id" element={<BlogDetail />} />
       </Routes>
     </div>
   );
