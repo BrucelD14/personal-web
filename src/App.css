@@ -43,3 +43,30 @@
 .section-description {
     line-height: 26px;
 }
+
+.articles {
+    border-top: 1px solid #eee;
+}
+
+.article {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.article-title {
+    margin-top: 0;
+}
+
+.article-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    color: blue;
+}
+
+.article-time {
+    color: #999;
+    font-size: 12px;
+}
