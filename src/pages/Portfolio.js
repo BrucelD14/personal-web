@@ -1,5 +1,7 @@
 export default function Portfolio() {
-    return(
-        <h1>PORTFOLIO PAGE</h1>
-    )
+  return (
+    <section className="section">
+      <h1 className="section-title">PORTFOLIO PAGE</h1>
+    </section>
+  );
 }

@@ -19,9 +19,9 @@ export default function Blog() {
   }, []);
 
   return (
-    <section>
-      <h1>BLOG PAGE</h1>
-      <p>Ini beberapa artikel yang dapat anda nikmati:</p>
+    <section className="section">
+      <h1 className="section-title">BLOG PAGE</h1>
+      <p className="section-description">Ini beberapa artikel yang dapat anda nikmati:</p>
 
       {loading ? (
         <i>Loading blogs..</i>
