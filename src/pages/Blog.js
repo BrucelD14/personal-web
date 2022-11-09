@@ -23,9 +23,8 @@ export default function Blog() {
       <h1>BLOG PAGE</h1>
       <p>Ini beberapa artikel yang dapat anda nikmati:</p>
 
-      {loading && <i>Loading articles..</i>}
-      {!loading && (
-        <div>
+      {loading ? (<i>Loading blogs..</i>) : (
+        <article>
           {articles.map(function (article) {
             return (
               <article key={article.id}>
@@ -36,7 +35,7 @@ export default function Blog() {
               </article>
             );
           })}
-        </div>
+        </article>
       )}
     </section>
   );
