@@ -38,6 +38,14 @@
     text-decoration: none;
 }
 
+.nav-item:hover {
+    transform: scale(1.1) ;
+-webkit-transform: scale(1.1) ;
+-moz-transform: scale(1.1) ;
+transition: ease .3s;
+font-weight: 600;
+}
+
 .nav-item:not(:last-child) {
     border-right: 1px solid #eee;
 }
