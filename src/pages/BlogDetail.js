@@ -5,6 +5,7 @@ export default function BlogDetail() {
   const params = useParams();
   const [article, setArticle] = useState({});
   const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(
     function () {
@@ -12,6 +13,12 @@ export default function BlogDetail() {
         const request = await fetch(
           `https://api.spaceflightnewsapi.net/v3/blogs/${params.id}`
         );
+
+        if (!request.ok) {
+            setLoading(false);
+            return setNotFound(true);
+        }
+
         const response = await request.json();
 
         setArticle(response);
@@ -21,6 +28,10 @@ export default function BlogDetail() {
     },
     [params]
   );
+
+  if(notFound) {
+    return <h1>BLOG TIDAK DITEMUKAN :(</h1>
+  }
 
   return (
     <section>

@@ -23,12 +23,16 @@ export default function Blog() {
       <h1>BLOG PAGE</h1>
       <p>Ini beberapa artikel yang dapat anda nikmati:</p>
 
-      {loading ? (<i>Loading blogs..</i>) : (
+      {loading ? (
+        <i>Loading blogs..</i>
+      ) : (
         <article>
           {articles.map(function (article) {
             return (
               <article key={article.id}>
-                <h3><Link to={`/blog/${article.id}`}>{article.title}</Link></h3>
+                <h3>
+                  <Link to={`/blog/${article.id}`}>{article.title}</Link>
+                </h3>
                 <time>
                   {new Date(article.publishedAt).toLocaleDateString()}
                 </time>
