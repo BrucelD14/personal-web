@@ -70,3 +70,17 @@
     color: #999;
     font-size: 12px;
 }
+
+.article-image {
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+.article-summary {
+    line-height: 26px;
+    margin-top: 0;
+}
+
+.article-source {
+    color: #999;
+}
