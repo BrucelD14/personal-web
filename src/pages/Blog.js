@@ -6,6 +6,7 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
 
   useEffect(function () {
+    document.title = "BLOG";
     async function getArticles() {
       const request = await fetch(
         "https://api.spaceflightnewsapi.net/v3/blogs"
@@ -21,7 +22,9 @@ export default function Blog() {
   return (
     <section className="section">
       <h1 className="section-title">BLOG PAGE</h1>
-      <p className="section-description">Ini beberapa artikel yang dapat anda nikmati:</p>
+      <p className="section-description">
+        Ini beberapa artikel yang dapat anda nikmati:
+      </p>
 
       {loading ? (
         <i>Loading blogs..</i>

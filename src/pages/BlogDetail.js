@@ -9,14 +9,15 @@ export default function BlogDetail() {
 
   useEffect(
     function () {
+      document.title = "BLOG DETAIL";
       async function getArticle() {
         const request = await fetch(
           `https://api.spaceflightnewsapi.net/v3/blogs/${params.id}`
         );
 
         if (!request.ok) {
-            setLoading(false);
-            return setNotFound(true);
+          setLoading(false);
+          return setNotFound(true);
         }
 
         const response = await request.json();
@@ -29,8 +30,8 @@ export default function BlogDetail() {
     [params]
   );
 
-  if(notFound) {
-    return <h1>BLOG TIDAK DITEMUKAN :(</h1>
+  if (notFound) {
+    return <h1>BLOG TIDAK DITEMUKAN :(</h1>;
   }
 
   return (
@@ -40,8 +41,14 @@ export default function BlogDetail() {
       ) : (
         <article className="article">
           <h1 className="article-title">{article.title}</h1>
-          <time className="article-time">{new Date(article.publishedAt).toLocaleDateString()}</time>
-          <img src={article.imageUrl} alt={article.title} className="article-image" />
+          <time className="article-time">
+            {new Date(article.publishedAt).toLocaleDateString()}
+          </time>
+          <img
+            src={article.imageUrl}
+            alt={article.title}
+            className="article-image"
+          />
           <p className="article-summary">{article.summary}</p>
           <p className="article-source">
             Source:{" "}

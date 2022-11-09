@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(function () {
+    document.title = "HOME";
+  }, []);
+
   return (
     <section className="section">
       <h1 className="section-title">SELAMAT DATANG DI WEBSITE GUEH</h1>

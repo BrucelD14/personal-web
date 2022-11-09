@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function About() {
+  useEffect(function () {
+    document.title = "ABOUT";
+  }, []);
+
   return (
     <section className="section">
       <h1 className="section-title">ABOUT</h1>

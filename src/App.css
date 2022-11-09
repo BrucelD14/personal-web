@@ -1,9 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
 .app {
     width: 425px;
     margin: 0 auto;
     background-color: white;
     border: 1px solid #eee;
     min-height: 100vh;
+}
+
+@media (max-width: 420px) {
+    .app {
+        width: 100%;
+    }
 }
 
 .brand {
