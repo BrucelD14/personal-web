@@ -45,11 +45,12 @@
     flex: 1 1 0;
     text-align: center;
     padding: 14px 0;
-    color: var(--txt-secndary);
+    color: var(--txt-primary);
     text-decoration: none;
 }
 
 .nav-item:hover {
+    color: var(--txt-secndary);
     transform: scale(1.1) ;
     -webkit-transform: scale(1.1) ;
     -moz-transform: scale(1.1) ;
@@ -77,6 +78,16 @@
 .home {
     background-image: url('../public/bg-home.jpg');
     background-size: cover;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-image {
+    max-width: 75%;
+    border-radius: 3px;
 }
 
 .articles {
@@ -121,12 +132,12 @@
 }
 
 .portfolio {
-    color: #000;
+    color: var(--txt-primary);
     text-decoration: none;
 }
 
 .portfolio-card {
-    border: 1px solid #eee;
+    border: 1px solid var(--bdr-primary);
     padding: 20px 10px;
     border-radius: 3px;
     transition: ease .3s;
@@ -134,13 +145,14 @@
 }
 
 .portfolio-card:hover {
+    color: #00A8CC;
     transform: translate(6px,-6px);
     -webkit-transform: translate(6px,-6px);
     -moz-transform: translate(6px,-6px);
 
-    box-shadow: -5px 5px 0px 0px rgba(0,0,0,1);
-    -webkit-box-shadow: -5px 5px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: -5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: -5px 5px 0px 0px var(--txt-secndary);
+    -webkit-box-shadow: -5px 5px 0px 0px var(--txt-secndary);
+    -moz-box-shadow: -5px 5px 0px 0px var(--txt-secndary);
 
 }
 

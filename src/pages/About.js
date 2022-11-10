@@ -8,6 +8,7 @@ export default function About() {
   return (
     <section className="section">
       <h1 className="section-title">ABOUT</h1>
+      <img src="https://thumbs2.imgbox.com/9e/10/IbsY3MDA_t.jpg" className="about-image" alt="profile-image"/>
       <p className="section-description">
         Halo namaku Brucel, aku adalah seorang Web Developer yang baru mulai
         belajar React.js
