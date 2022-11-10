@@ -75,10 +75,10 @@
     line-height: 26px;
 }
 
-.home {
+/* .home {
     background-image: url('../public/bg-home.jpg');
     background-size: cover;
-}
+} */
 
 .about {
     display: flex;
