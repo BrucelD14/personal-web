@@ -9,7 +9,7 @@ import BlogDetail from "./pages/BlogDetail";
 function App() {
   return (
     <div className="app">
-    <div className="brand">PERSONAL WEB BRUCEL</div>
+    <div className="brand">MY PERSONAL WEB</div>
       <nav className="nav">
         <Link to="/" className="nav-item">HOME</Link>
         <Link to="/about" className="nav-item">ABOUT</Link>
