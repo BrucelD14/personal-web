@@ -9,9 +9,14 @@ export default function Portfolio() {
     <section className="section">
       <h1 className="section-title">PORTFOLIO</h1>
       <p className="section-description">
-        Ini adalah project dan sertifikat yang kumiliki:
+        these are some of the projects and certificates i have:
       </p>
-      <a href="https://newversion-brucel4movie.netlify.app/" target="_blank" className="portfolio" rel="noreferrer">
+      <a
+        href="https://newversion-brucel4movie.netlify.app/"
+        target="_blank"
+        className="portfolio"
+        rel="noreferrer"
+      >
         <div className="portfolio-card">
           <h3 className="portfolio-title">brucel4movie</h3>
           <p className="portfolio-description">Movie list app</p>
@@ -20,24 +25,41 @@ export default function Portfolio() {
           <span className="portfolio-stack">Bootstrap 5</span>
         </div>
       </a>
-      <a href="https://bmi-calculator-tpa2.netlify.app/" target="_blank" className="portfolio" rel="noreferrer">
+      <a
+        href="https://bmi-calculator-tpa2.netlify.app/"
+        target="_blank"
+        className="portfolio"
+        rel="noreferrer"
+      >
         <div className="portfolio-card">
           <h3 className="portfolio-title">BMI Calculator</h3>
-          <p className="portfolio-description">Calculator for your ideal weight & height</p>
+          <p className="portfolio-description">
+            Calculator for your ideal weight & height
+          </p>
           <br />
           <span className="portfolio-stack">Javascript</span>
           <span className="portfolio-stack">Bootstrap 5</span>
         </div>
       </a>
-      <a href="dicoding.com/certificates/ERZR44O3WZYV" target="_blank" className="portfolio" rel="noreferrer">
+      <a
+        href="dicoding.com/certificates/ERZR44O3WZYV"
+        target="_blank"
+        className="portfolio"
+        rel="noreferrer"
+      >
         <div className="portfolio-card">
           <h3 className="portfolio-title">Cloud Practitioner Essentials</h3>
-          <p className="portfolio-description">Belajar Dasar AWS Cloud</p>
+          <p className="portfolio-description">Learn basic AWS Cloud</p>
           <br />
           <span className="portfolio-stack">Dicoding Academy</span>
         </div>
       </a>
-      <a href="dicoding.com/certificates/ERZR44O3WZYV" target="_blank" className="portfolio" rel="noreferrer">
+      <a
+        href="dicoding.com/certificates/ERZR44O3WZYV"
+        target="_blank"
+        className="portfolio"
+        rel="noreferrer"
+      >
         <div className="portfolio-card">
           <h3 className="portfolio-title">UI/UX Design Mastery</h3>
           <p className="portfolio-description">Learn UI/UX design at Skilvul</p>
