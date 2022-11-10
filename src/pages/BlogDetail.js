@@ -37,7 +37,7 @@ export default function BlogDetail() {
   return (
     <section className="section">
       {loading ? (
-        <i>Loading blogs...</i>
+        <i>Loading blog...</i>
       ) : (
         <article className="article">
           <h1 className="article-title">{article.title}</h1>
