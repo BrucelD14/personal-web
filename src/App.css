@@ -91,11 +91,11 @@
 }
 
 .articles {
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--bdr-primary);
 }
 
 .article {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--bdr-primary);
     padding: 20px 0;
 }
 
@@ -104,16 +104,16 @@
 }
 
 .article-title a {
-    color: #000;
+    color: var(--txt-secndary);
     text-decoration: none;
 }
 
 .article-title a:hover {
-    color: blue;
+    color: var(--txt-else);
 }
 
 .article-time {
-    color: #999;
+    color: var(--txt-primary);
     font-size: 12px;
 }
 

@@ -21,9 +21,9 @@ export default function Blog() {
 
   return (
     <section className="section">
-      <h1 className="section-title">BLOG PAGE</h1>
+      <h1 className="section-title">BLOG</h1>
       <p className="section-description">
-        Ini beberapa artikel yang dapat anda nikmati:
+        Ini beberapa blog yang dapat anda nikmati:
       </p>
 
       {loading ? (
