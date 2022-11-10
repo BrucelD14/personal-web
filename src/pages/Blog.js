@@ -23,7 +23,7 @@ export default function Blog() {
     <section className="section">
       <h1 className="section-title">BLOG</h1>
       <p className="section-description">
-        Ini beberapa blog yang dapat anda nikmati:
+        Here are some readings that can make you more brilliant:
       </p>
 
       {loading ? (
