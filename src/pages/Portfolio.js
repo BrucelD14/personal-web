@@ -55,7 +55,7 @@ export default function Portfolio() {
         </div>
       </a>
       <a
-        href="dicoding.com/certificates/ERZR44O3WZYV"
+        href="https://skilvul.com/courses/uiux-design-mastery/student/brucelD"
         target="_blank"
         className="portfolio"
         rel="noreferrer"
