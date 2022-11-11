@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <button className="footer-button">
-        <a href="mailto: samuderaduta144@gmail.com">KATAKAN HALO</a>
+        <a href="mailto: samuderaduta144@gmail.com">SAY HELLO</a>
       </button>
       <div className="footer-icons">
         <a href="https://github.com/BrucelD14" target="_blank" rel="noreferrer">
